@@ -194,8 +194,20 @@ header {
 }
 
 /* ----------------------------------------- */
+/* Features */
+/* ----------------------------------------- */
+
+.sectino-features {
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------- */
 /* Meals */
 /* ----------------------------------------- */
+
+.section-meals{
+    padding: 0;
+}
 
 .meals-showcase {
     list-style: none;
@@ -211,9 +223,19 @@ header {
 .meal {
     width: 100%;
     margin: 0;
+    overflow:hidden;
+    background: black;
 }
 
 .meal img {
+    opacity: 0.7;
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
